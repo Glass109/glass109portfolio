@@ -12,6 +12,9 @@ export default defineNuxtConfig({
         '@nuxt/scripts',
         '@nuxt/icon',
     ],
+    runtimeConfig: {
+        public: {},
+    },
     tailwindcss: {
         config: {
             content: ['./dictionaries/*.{js,json,ts}'],

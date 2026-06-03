@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import { defineModel, onMounted } from 'vue';
-
-const checked = defineModel({
-    type: Boolean,
+const checked = defineModel<boolean>({
     default: false,
 });
-
 </script>
 
 <template>
     <div>
         <label class="switch">
-            <input type="checkbox" v-model="checked"s>
+            <input type="checkbox" v-model="checked">
             <span class="slider"></span>
         </label>
     </div>

@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-    <section class="flex flex-col md:flex-row justify-evenly items-center relative">
-        <div class="absolute inset-x-0 top-0 pointer-events-none">
+    <section class="flex sm:flex-col md:flex-row justify-evenly items-center">
+        <div class="absolute w-screen pointer-events-none">
             <div class="absolute left-0 -top-20 w-full h-16 bg-[#00DAD1] mix-blend-difference"></div>
             <div class="absolute left-0 top-12 w-full h-16 bg-[#32DC00] mix-blend-difference"></div>
         </div>
@@ -13,6 +13,7 @@
             <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light">desarrollador web</h3>
         </div>
 
+        <!-- Pictures  -->
         <div class="mix-blend-luminosity relative mt-8 md:mt-0">
             <img class="object-contain max-w-full" src="/Foto.png" alt="Mi foto">
             <img class="absolute top-16 drop-shadow-lg shadow-black animate-slow-spin" src="/star.svg" alt="">

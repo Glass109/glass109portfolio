@@ -10,6 +10,10 @@ const props = defineProps({
     type: String,
     default: '🤡',
   },
+  icon: {
+    type: String,
+    default: '',
+  },
   color: {
     type: String,
     default: 'bg-gray-200',
@@ -21,7 +25,10 @@ const props = defineProps({
   <div class="border-4 border-black transition-all overflow-clip">
     <!-- Barra de titulo -->
     <div class="text-xl p-2 flex items-center border-b-2 gap-2 border-black" :class=[color]>
-      <div class="animate-bounce rounded-full border-2 border-black">{{emoji}}</div>
+      <div class="rounded-full border-2 border-black size-8 p-1 flex items-center justify-center bg-white/50">
+        <Icon v-if="icon" :name="icon" size="1.2em" />
+        <span v-else class="animate-bounce leading-none">{{ emoji }}</span>
+      </div>
       <div class="grow text-center font-black">{{ title }}</div>
       <!-- Botones de cierre de ventana      -->
       <div
