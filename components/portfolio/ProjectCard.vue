@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {ref} from 'vue';
-import type {ProjectCardProps} from '~/public/dictionaries/projectCards';
+import type {ProjectCardProps} from '~/dictionaries/projectCards';
 
 const props = defineProps<ProjectCardProps>();
 const cardRef = ref<HTMLElement | null>(null);

@@ -1,7 +1,7 @@
 <script setup>
 import {onMounted, ref, watch} from 'vue';
 import TheWindow from "~/components/portfolio/TheWindow.vue";
-import {windows as windowsData} from "~/public/dictionaries/cards.js";
+import {windows as windowsData} from "~/dictionaries/cards.js";
 
 let initialWindows = [...windowsData]; // Save the initial state
 

@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     ],
     tailwindcss: {
         config: {
-            content: ['./public/dictionaries/*.{js,json,ts}'],
+            content: ['./dictionaries/*.{js,json,ts}'],
         },
     },
     generate: {
